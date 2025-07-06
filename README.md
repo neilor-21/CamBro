@@ -1,18 +1,18 @@
-# 🏕️ CampBro – Your College Life, Unified
+# 🏕️ CamBro – Your College Life, Unified
 
-**Live Homepage:** [https://campbro-homepage.vercel.app](https://campbro-homepage.vercel.app)  
+**Live Homepage:** [https://cambro-omega.vercel.app](https://cambro-omega.vercel.app)  
 *An immersive scrollytelling intro to the CampBro experience.*  
 **Explore the App:** Click “Explore Dashboard” on the homepage to enter the working interface.
 
 ---
 
-## 🎯 What is CampBro?
+## 🎯 What is CamBro?
 
-**CampBro** is a two-layered student productivity platform designed to organize, simplify, and beautify your college experience.
+**CamBro** is a two-layered student productivity platform designed to organize, simplify, and beautify your college experience.
 
 > ✨ “Design out the struggle.” ✨
 
-College students juggle assignments, classes, buses, library dues, events, and more—all across disconnected apps, PDFs, and WhatsApp groups. **CampBro fixes that** by bringing everything into one intelligent, aesthetic, and responsive app.
+College students juggle assignments, classes, buses, library dues, events, and more—all across disconnected apps, PDFs, and WhatsApp groups. **CamBro fixes that** by bringing everything into one intelligent, aesthetic, and responsive app.
 
 ---
 
