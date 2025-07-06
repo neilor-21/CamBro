@@ -54,13 +54,13 @@ College students juggle assignments, classes, buses, library dues, events, and m
 ## 🛠️ Tech Stack
 
 | Layer         | Tools Used                           |
-|---------------|---------------------------------------|
+|---------------|--------------------------------------|
 | ⚛️ Frontend   | React + Vite                         |
-| 🎨 UI         | Tailwind CSS & Chakra UI             |
+| 🎨 UI         | CSS & Figma                          |
 | 🎞️ Animations | GSAP, Lenis, Framer Motion           |
-| 🤖 AI         | Google Gemini API                    |
+| 🤖 AI         | Google Gemini API, Copilot, Chatgpt  |
 | ☁️ Backend    | Firebase (Planned: Auth, Firestore)  |
-| 🚀 Deployment | Vercel                                |
+| 🚀 Deployment | Vercel                               |
 
 ---
 
