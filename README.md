@@ -1,12 +1,100 @@
-# React + Vite
+# 🏕️ CampBro – Your College Life, Unified
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Live Homepage:** [https://campbro-homepage.vercel.app](https://campbro-homepage.vercel.app)  
+*An immersive scrollytelling intro to the CampBro experience.*  
+**Explore the App:** Click “Explore Dashboard” on the homepage to enter the working interface.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎯 What is CampBro?
 
-## Expanding the ESLint configuration
+**CampBro** is a two-layered student productivity platform designed to organize, simplify, and beautify your college experience.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+> ✨ “Design out the struggle.” ✨
+
+College students juggle assignments, classes, buses, library dues, events, and more—all across disconnected apps, PDFs, and WhatsApp groups. **CampBro fixes that** by bringing everything into one intelligent, aesthetic, and responsive app.
+
+---
+
+## 🌐 Project Structure
+
+### 1️⃣ **Landing Page**
+- Immersive **scrollytelling homepage** built with `GSAP + Lenis + Framer Motion`.
+- Communicates the **problem, vision, and app experience**.
+- Built with **React + Vite**, and designed for emotional resonance and UX immersion.
+- Links to the actual working app via **“Explore Dashboard”** button.
+
+### 2️⃣ **Dashboard App**
+- A real functional dashboard (React) showcasing multiple student tools:
+  - 📅 Class Schedule Viewer
+  - 🚌 Bus/Train Schedule
+  - 🍽️ Canteen Menu
+  - 📚 Library Book Viewer
+  - 📣 Event Announcements
+  - 🧠 AI-Powered FAQ Chatbot *(Gemini API)*
+  - 📤 Form & Survey Link Collector
+  - 🗳️ Complaint Submission Box
+  - ✅ Personal login & multi-institution support *(coming soon)*
+
+---
+
+## 🧪 Features in Detail
+
+| Category             | Features |
+|----------------------|----------|
+| 🎓 **Academic**       | Class schedule, Assignment deadlines (upcoming), Exam countdown |
+| 🧠 **AI Assistant**   | Google Gemini-based chatbot for campus queries |
+| 🚍 **Logistics**      | Real-time or static transport viewer, Interactive campus info |
+| 🧑‍🏫 **Faculty Tools** | Teacher announcements, complaint box, survey collector |
+| 🍱 **Campus Life**    | Canteen menus, event feed, student feedback portal |
+| 🔐 **Login (Coming)** | Firebase Auth for multi-college personalized dashboards |
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer         | Tools Used                           |
+|---------------|---------------------------------------|
+| ⚛️ Frontend   | React + Vite                         |
+| 🎨 UI         | Tailwind CSS & Chakra UI             |
+| 🎞️ Animations | GSAP, Lenis, Framer Motion           |
+| 🤖 AI         | Google Gemini API                    |
+| ☁️ Backend    | Firebase (Planned: Auth, Firestore)  |
+| 🚀 Deployment | Vercel                                |
+
+---
+
+## 🔐 Environment Variables
+
+To use the AI bot, create a `.env` file inside the `dashboard/` or `campbro-dashboard/` folder:
+
+
+
+---
+
+## ▶️ How to Run Locally
+
+### 🔹 Homepage (Landing)
+```bash
+cd campbro-homepage
+npm install
+npm run dev
+
+
+
+cd campbro-dashboard
+npm install
+npm run dev
+
+
+
+
+---
+
+### ✅ What’s Included:
+- Clear, compact structure for GitHub.
+- Descriptive enough for judges to scan quickly.
+- Professional but personal tone.
+- Contains everything from project vision → setup → features → roadmap → team.
+
+Let me know if you want to auto-generate a `package.json`, `.env.example`, or preview GIF README badge next!
