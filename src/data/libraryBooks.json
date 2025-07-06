@@ -1,0 +1,32 @@
+[
+  {
+    "id": 101,
+    "title": "The Hitchhiker's Guide to the Galaxy",
+    "author": "Douglas Adams",
+    "status": "Available"
+  },
+  {
+    "id": 102,
+    "title": "Clean Code",
+    "author": "Robert C. Martin",
+    "status": "Issued"
+  },
+  {
+    "id": 103,
+    "title": "Designing Data-Intensive Applications",
+    "author": "Martin Kleppmann",
+    "status": "Available"
+  },
+  {
+    "id": 104,
+    "title": "Project Hail Mary",
+    "author": "Andy Weir",
+    "status": "Available"
+  },
+  {
+    "id": 105,
+    "title": "A Brief History of Time",
+    "author": "Stephen Hawking",
+    "status": "Issued"
+  }
+]

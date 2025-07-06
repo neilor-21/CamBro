@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "type": "Bus",
+    "route": "Campus to Chengannur",
+    "time": "08:00 AM",
+    "status": "On Time"
+  },
+  {
+    "id": 2,
+    "type": "Bus",
+    "route": "Campus to Ernakulam",
+    "time": "09:30 AM",
+    "status": "On Time"
+  },
+  {
+    "id": 3,
+    "type": "Train",
+    "route": "Local Station to Trivandrum",
+    "time": "10:15 AM",
+    "status": "Delayed"
+  },
+  {
+    "id": 4,
+    "type": "Bus",
+    "route": "Campus to Chengannur",
+    "time": "04:30 PM",
+    "status": "On Time"
+  }
+]

@@ -1,0 +1,40 @@
+/* 1. A Modern CSS Reset */
+/* This removes all default browser spacing and makes layouts predictable. */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. Set up the main document to be a full-screen canvas */
+html, body, #root {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  /* Set your base font and background color for the entire app */
+  font-family: 'Inter', sans-serif;
+  background-color: #0a0a0a; /* The dark background from your homepage */
+  color: #f0f0f0;
+  
+  /* This prevents horizontal scrollbars if an animation accidentally pokes out of the screen */
+  overflow-x: hidden;
+}
+
+/* Optional: For smoother fonts */
+h1, h2, h3, h4, h5, h6 {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.main-content-wrapper {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.main-content-wrapper.loaded {
+  opacity: 1;
+}
+

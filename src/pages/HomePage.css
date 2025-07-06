@@ -1,0 +1,129 @@
+/* ==========================================================================
+   DEFINITIVE STABLE HOMEPAGE STYLESHEET
+   ========================================================================== */
+
+/* This wrapper helps ensure other content doesn't interfere */
+.homepage-container { }
+
+/* --- ACT 1: HERO SECTION --- */
+.hero-container {
+  height: 100vh;
+  background-color: #0a0a0a;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero-content { z-index: 2; }
+.hero-line { overflow: hidden; margin-bottom: -0.25em; }
+.hero-line span { font-family: 'Poppins', sans-serif; font-size: clamp(2.5rem, 6vw, 5rem); font-weight: 700; letter-spacing: -2px; margin: 0; line-height: 1.1; display: inline-block; }
+.hero-subtext { font-size: 1.25rem; color: #a0aec0; margin-top: 1rem; }
+.caged-shape-container { position: absolute; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; z-index: 1; }
+.cage { width: clamp(200px, 25vw, 350px); height: clamp(200px, 25vw, 350px); border: 3px solid #3B4262; display: flex; justify-content: center; align-items: center; }
+.shape { width: 60%; height: 60%; background: linear-gradient(45deg, #4f46e5, #3b82f6); border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; animation: morph 8s ease-in-out infinite; }
+@keyframes morph { 0% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; } 50% { border-radius: 60% 40% 30% 70% / 60% 70% 30% 40%; } 100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; } }
+.scroll-down-indicator { position: absolute; bottom: 2rem; font-size: 0.9rem; color: #718096; display: flex; flex-direction: column; align-items: center; gap: 0.5rem; }
+.scroll-down-indicator::after { content: ''; display: block; width: 2px; height: 40px; background: #718096; animation: scroll-hint 2s ease-out infinite; }
+@keyframes scroll-hint { from { transform: translateY(-20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+
+/* --- ACT 2: SCROLLYTELLING SECTION --- */
+.scrolly-container { height: 200vh; position: relative; background-color: #0a0a0a; }
+.scrolly-content { height: 100vh; width: 100%; position: sticky; top: 0; overflow: hidden; display: flex; justify-content: center; align-items: center; }
+.problem-container { position: absolute; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; flex-direction: column; z-index: 5; }
+.problem-headline { font-family: 'Poppins', sans-serif; font-size: clamp(2rem, 4vw, 3.5rem); text-align: center; max-width: 800px; color: #a0aec0; }
+.chaos-elements { position: absolute; width: 100%; height: 100%; }
+.chaos-element { position: absolute; background: #2d3748; padding: 0.75rem 1.25rem; border-radius: 8px; font-weight: 700; font-size: clamp(0.9rem, 1.5vw, 1.1rem); color: #e2e8f0; box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+.chaos-element:nth-child(1) { top: 20%; left: 30%; } .chaos-element:nth-child(2) { top: 50%; left: 10%; transform: rotate(-15deg); } .chaos-element:nth-child(3) { top: 30%; left: 70%; transform: rotate(10deg); } .chaos-element:nth-child(4) { top: 70%; left: 60%; } .chaos-element:nth-child(5) { top: 80%; left: 25%; transform: rotate(5deg); }
+.desktop-window { width: clamp(300px, 70vw, 1000px); height: clamp(200px, 45vw, 600px); border-radius: 12px; background-color: #2d3748; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.7); overflow: hidden; display: flex; flex-direction: column; position: absolute; z-index: 10; opacity: 0; scale: 0.7; }
+.window-header { display: flex; align-items: center; padding: 0.75rem; background-color: #4a5568; flex-shrink: 0; }
+.dot { width: 12px; height: 12px; border-radius: 50%; margin: 0 4px; }
+.dot.red { background-color: #f87171; } .dot.yellow { background-color: #fbbf24; } .dot.green { background-color: #34d399; }
+.window-content { flex-grow: 1; background: #0a0a0a; }
+.window-content video { width: 100%; height: 100%; object-fit: cover; display: block; }
+.solution-text-container { position: absolute; z-index: 15; width: 90%; height: 100%; display: flex; justify-content: flex-start; align-items: center; padding: 0 5%; pointer-events: none; }
+.text-group { position: absolute; max-width: 400px; opacity: 0; }
+.text-group h3 { font-family: 'Poppins', sans-serif; font-size: clamp(3rem, 6vw, 5rem); font-weight: 700; margin: 0; color: white; }
+.text-group p { font-family: 'Inter', sans-serif; font-size: clamp(1rem, 1.5vw, 1.25rem); color: #a0aec0; line-height: 1.6; margin-top: 1rem; }
+
+/* --- ACT 3, 4, 5: THE REST OF THE PAGE --- */
+.features-section-container, .team-section-container, .cta-section-container {
+  position: relative;
+  background-color: #f0f2f5;
+  color: #1a202c;
+  padding: 8rem 2rem;
+}
+.team-section-container, .cta-section-container { background-color: #0a0a0a; color: #f0f0f0; }
+.features-content, .team-content, .cta-content { max-width: 1200px; margin: 0 auto; text-align: center; }
+.features-content h2, .team-content h2, .cta-content h2 { font-family: 'Poppins', sans-serif; font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 4rem; }
+.features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+.feature-card { background: white; padding: 2.5rem 2rem; border-radius: 16px; text-align: left; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); }
+.feature-icon { font-size: 2.5rem; color: #3b82f6; margin-bottom: 1.5rem; }
+.feature-card h3 { font-family: 'Poppins', sans-serif; font-size: 1.5rem; margin-bottom: 1rem; }
+.feature-card p { font-family: 'Inter', sans-serif; line-height: 1.6; color: #4a5568; }
+.team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 3rem; }
+.team-card { display: flex; flex-direction: column; align-items: center; }
+.team-photo { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 4px solid #3B4262; margin-bottom: 1.5rem; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); }
+.team-card h3 { font-family: 'Poppins', sans-serif; font-size: 1.75rem; margin: 0 0 0.5rem 0; }
+.team-card p { font-family: 'Inter', sans-serif; color: #a0aec0; margin: 0; }
+.cta-section-container { height: 100vh; display: flex; justify-content: center; align-items: center; }
+.cta-content h2 { margin-bottom: 2.5rem; }
+.cta-button { font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 1.25rem; color: #0a0a0a; background-color: #f0f0f0; padding: 1rem 3rem; border: none; border-radius: 50px; cursor: pointer; text-decoration: none; transition: transform 0.2s, box-shadow 0.2s; }
+.cta-button:hover { transform: scale(1.05); box-shadow: 0 10px 30px rgba(240, 240, 240, 0.2); }
+
+
+
+
+/* --- Brand Reveal Scene --- */
+.brand-reveal-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  z-index: 20; /* Sits on top of the other scrollytelling elements */
+  opacity: 0; /* Starts invisible, GSAP will control this */
+}
+
+.brand-logo {
+  width: clamp(150px, 20vw, 250px);
+  margin-bottom: 3rem;
+}
+
+.brand-tagline {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.brand-pillars {
+  display: flex;
+  gap: 4rem;
+  text-align: center;
+}
+
+.brand-pillar {
+  border-top: 2px solid #3B4262;
+  padding-top: 1.5rem;
+  width: 200px;
+}
+.brand-pillar h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+.brand-pillar p {
+  font-family: 'Inter', sans-serif;
+  color: #a0aec0;
+  line-height: 1.6;
+}

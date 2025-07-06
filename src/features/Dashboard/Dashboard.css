@@ -1,0 +1,119 @@
+/* Import a font in your main index.css if you haven't already */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* --- Main Container & Layers --- */
+.dashboard-container {
+  /* This is our main canvas, using the dark blue color */
+  background-color: #3B4262; 
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+}
+
+.background-layer {
+  /* This layer is for the reactive background effect later.
+     For now, it's just a static part of the background. */
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.main-dashboard {
+  /* This holds the top white cards and schedule bar */
+  position: relative;
+  z-index: 2; /* Sits on top of the background */
+  padding: 2rem;
+}
+
+
+/* --- Widget Grid System --- */
+.widget-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr; /* Defines the 3 columns */
+  gap: 1.5rem; /* Space between the widgets */
+  margin-bottom: 1.5rem;
+}
+
+.widget {
+  background: white;
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.widget h4 {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #3B4262;
+  font-weight: 600;
+}
+
+.widget.small {
+  height: 200px;
+}
+
+.widget.large {
+  height: 200px;
+}
+
+
+/* --- Class Schedule Bar --- */
+.class-schedule-bar {
+  background: white;
+  border-radius: 20px;
+  height: 100px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.class-schedule-bar h4 {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #3B4262;
+  font-weight: 600;
+}
+
+
+/* --- Orange Features Section --- */
+.features-section {
+  position: relative;
+  z-index: 3; /* Sits on top of the main dashboard */
+  background-color: #F8B400; /* Your orange color */
+  padding: 4rem 2rem 2rem 2rem;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  margin-top: -2rem; /* The trick to make it overlap */
+}
+
+.features-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.feature-button {
+  background: none;
+  border: none;
+  color: #3B4262;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.feature-button svg {
+  font-size: 2.5rem; /* Icon size */
+}
+
+/* This is where the content for each feature will appear */
+.feature-details-container {
+    background: #F8B400; /* Same orange color */
+    padding: 2rem 0;
+}
+
+/* .feature-detail-content styles can be added here when needed */

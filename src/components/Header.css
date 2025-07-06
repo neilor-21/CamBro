@@ -1,0 +1,85 @@
+.header-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  z-index: 1000;
+  transition: background-color 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out;
+}
+
+.header-container.scrolled {
+  background-color: rgba(10, 10, 10, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+.header-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 55px; /* Adjust the height to fit your header perfectly */
+  width: auto;
+  display: block; /* Removes any extra space below the image */
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: #a0aec0;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: white;
+}
+
+.nav-links a.cta-link {
+  background: white;
+  color: #0a0a0a;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+}
+
+.hamburger-button {
+  display: none; /* Hidden on desktop */
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  z-index: 1001; /* Above the mobile menu */
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Start off-screen */
+    width: 70%;
+    height: 100vh;
+    background: #1a202c;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    transition: right 0.5s ease-in-out;
+  }
+  
+  .nav-links.mobile-active {
+    right: 0;
+  }
+
+  .hamburger-button {
+    display: block;
+  }
+}

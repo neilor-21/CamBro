@@ -1,0 +1,17 @@
+{
+  "Monday": {
+    "Breakfast": ["Idli, Sambar", "Chutney", "Tea/Coffee"],
+    "Lunch": ["Rice", "Dal Fry", "Vegetable Curry", "Salad"],
+    "Dinner": ["Chapati", "Paneer Butter Masala", "Rice"]
+  },
+  "Tuesday": {
+    "Breakfast": ["Dosa, Chutney", "Sambar", "Tea/Coffee"],
+    "Lunch": ["Lemon Rice", "Yogurt", "Papadum"],
+    "Dinner": ["Fried Rice", "Gobi Manchurian"]
+  },
+  "Wednesday": {
+    "Breakfast": ["Puttu, Kadala Curry", "Tea/Coffee"],
+    "Lunch": ["Rice", "Aviyal", "Thorun", "Sambar"],
+    "Dinner": ["Appam", "Vegetable Stew"]
+  }
+}

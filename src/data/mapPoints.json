@@ -1,0 +1,6 @@
+[
+  { "id": "lib", "name": "Central Library", "x": 30, "y": 40 },
+  { "id": "cs", "name": "CS Department", "x": 55, "y": 25 },
+  { "id": "canteen", "name": "Main Canteen", "x": 70, "y": 60 },
+  { "id": "audi", "name": "Auditorium", "x": 20, "y": 75 }
+]

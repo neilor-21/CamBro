@@ -1,0 +1,111 @@
+/* Using a container class to keep styles scoped */
+.library-container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #f4f7f9;
+  font-family: 'Poppins', sans-serif;
+}
+
+.library-header {
+  margin-bottom: 2rem;
+}
+
+.library-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 1rem;
+}
+
+/* We can reuse the search-input style from our main CSS if we want,
+   but defining it here keeps the component self-contained */
+.search-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.75rem 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.search-input:focus {
+  outline: none;
+  border-color: #4299e1;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+}
+
+
+/* --- Filter Buttons --- */
+.filter-buttons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+.filter-buttons button {
+  padding: 0.5rem 1rem;
+  border: 2px solid #e2e8f0;
+  background-color: white;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.filter-buttons button.active {
+  background-color: #3b82f6;
+  color: white;
+  border-color: #3b82f6;
+}
+.filter-buttons button:not(.active):hover {
+    background-color: #f8fafc;
+    border-color: #cbd5e1;
+}
+
+
+/* --- Table Styling --- */
+.table-container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden; /* This is key for the rounded corners on the table */
+}
+
+.book-table {
+  width: 100%;
+  border-collapse: collapse; /* Removes space between cells */
+}
+
+.book-table th, .book-table td {
+  padding: 1rem 1.5rem;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.book-table th {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #718096;
+  background-color: #f8fafc;
+}
+
+/* Zebra-striping for readability */
+.book-table tbody tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+.status-pill {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: white;
+}
+
+.status-pill.available {
+  background-color: #16a34a; /* Green */
+}
+
+.status-pill.issued {
+  background-color: #eab308; /* Yellow/Orange */
+}

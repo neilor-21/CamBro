@@ -1,0 +1,125 @@
+/* ---  Import a nicer font (add this to your main index.css) --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* --- Main Container & Header --- */
+.schedule-container {
+  /* Use the full page */
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #f4f7f9; /* Lighter, softer background */
+  font-family: 'Poppins', sans-serif; /* Use the new font */
+}
+
+.schedule-header {
+  margin-bottom: 2rem;
+}
+
+.schedule-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 1rem;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.75rem 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #4299e1;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+}
+
+
+/* --- The Card Grid --- */
+.schedule-list {
+  display: grid;
+  /* Make columns responsive */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem; /* More space between cards */
+}
+
+
+/* --- The Upgraded Card --- */
+.schedule-card {
+  background: white;
+  border-radius: 12px; /* Softer corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Softer shadow */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Important for the border trick */
+  border-bottom: 4px solid; /* The colored bottom border */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* Add a hover effect! */
+.schedule-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Specific border colors */
+.schedule-card.bus { border-color: #3b82f6; }
+.schedule-card.train { border-color: #16a34a; }
+
+
+/* --- Card Sections --- */
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.25rem;
+  background-color: #f8fafc;
+  font-size: 1.5rem; /* Make icon bigger */
+  color: #4a5568;
+}
+
+.type-badge {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.card-body {
+  padding: 1.25rem;
+  flex-grow: 1; /* Makes the body take up available space */
+}
+
+.route-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin: 0 0 1rem 0;
+}
+
+.info-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #718096;
+}
+
+.info-icon {
+  font-size: 1.1rem;
+}
+
+.card-footer {
+  padding: 1rem 1.25rem;
+  text-align: right;
+}
+
+.status {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Keep your status colors */
+.status.on-time { color: #16a34a; }
+.status.delayed { color: #dc2626; }
