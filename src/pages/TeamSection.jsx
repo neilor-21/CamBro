@@ -7,10 +7,10 @@ gsap.registerPlugin(ScrollTrigger);
 
 // IMPORTANT: Replace with your team's details and image paths
 const teamMembers = [
-  { name: 'Advika', role: 'UI/UX & Content Writer', img: '/src/assets/advika.jpg' },
-  { name: 'Abin', role: 'Developer', img: '/src/assets/abin.jpg' },
-  { name: 'Abhijith', role: 'UI/UX & Content Designer', img: '/src/assets/abhijith.jpg' },
-  { name: 'Neil', role: 'Developer', img: '/src/assets/neil.png' },
+  { name: 'Advika', role: 'UI/UX & Content Writer', img: '/public/advika.jpg' },
+  { name: 'Abin', role: 'Developer', img: '/public/abin.jpg' },
+  { name: 'Abhijith', role: 'UI/UX & Content Designer', img: '/public/abhijith.jpg' },
+  { name: 'Neil', role: 'Developer', img: '/public/neil.png' },
 ];
 
 function TeamSection() {
