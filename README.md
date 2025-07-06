@@ -98,3 +98,14 @@ npm run dev
 - Contains everything from project vision → setup → features → roadmap → team.
 
 Let me know if you want to auto-generate a `package.json`, `.env.example`, or preview GIF README badge next!
+
+
+---
+
+
+###🤖AI Tools Used:
+- Copilot: for debugging and code correction 
+- Google AI Studio: for debugging and code correction 
+- Coolors: for colour pallete generation 
+- ChatGPT: for planning and roadmap
+
